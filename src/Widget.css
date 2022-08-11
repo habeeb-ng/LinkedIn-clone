@@ -1,0 +1,149 @@
+.widget{
+    position: sticky;
+    top: 80px;
+    flex: 0.3;
+    height: fit-content;
+    margin-bottom: 20px;
+    
+}
+.widget__news{
+    background-color: white;
+    padding: 20px;
+    
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.widget__news_header{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.widget__news_header h2{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.widget__article{
+    display: flex;
+    margin-top: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.widget__articleLeft{
+    color: gray;
+    margin-right: 10px;
+}
+.widget__articleRight{
+    flex: 1;
+}
+.widget__articleLeft .MuiSvgIcon-root{
+    width: 15px;
+}
+.widget__articleRight h4{
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+.widget__articleRight p{
+    font-size: 13px;
+    color: gray;
+}
+
+.widget__news ul{
+    /* list-style: none; */
+    /* margin-block-start: 0; */
+    padding-inline-start: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.widgetNewsList{
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding-left: 0;
+    color: gray;
+    /* list-style: none; */
+    
+}
+.widgetNewsList h4{
+    color: black ; 
+    font-weight: 600;
+}
+.widgetNewsList p{
+    font-size: 12px;
+}
+.footer{
+    text-align: center;
+    margin-top: 10px;
+    
+    padding: 10px;
+    color: rgb(82, 78, 78);
+    font-size: 14px;
+    font-weight: 250;
+}
+.footer__text{
+    display :flex;
+    justify-content: space-evenly;
+    padding: 4px;
+}
+.footer__text span:hover{
+    color: #0a66c2 !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copyright{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.copyright img{
+    width: 60px;
+    padding: 5px;
+    box-sizing: border-box
+}
+.copyright p{
+    font-size: 13px;
+    font-weight: 300;
+    padding: 5px;
+    box-sizing: border-box
+}
+
+@media screen and (max-width: 700px){
+     .widget{
+        display: block !important;
+    }
+    .widget__news{
+        display: none;
+    }
+    .footer{
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 950px){
+    .widget{
+        display: none;
+    }
+}
+@media screen and (max-width: 1050px){
+    .copyright img{
+    width: 60px;
+    }
+    .copyright p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 550px){
+    .footer{
+        margin-left: 50px;
+    }
+    .copyright{
+        margin-left: 50px;
+    }
+}
